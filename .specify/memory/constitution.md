@@ -1,7 +1,7 @@
 <!--
 SYNC IMPACT REPORT
 ==================
-Version change:      1.0.0 → 1.1.0 (MINOR — new principle VI added; tech stack fully specified)
+Version change:      1.1.0 → 1.1.1 (PATCH — documentation language policy added to Development Workflow)
 Modified principles:
   II. Simplicity & YAGNI        — added MVP-first recommendation guidance (cosine similarity before ML)
   III. LLM-Aware Design         — clarified LLM is a conversation layer, not the recommendation core
@@ -151,6 +151,10 @@ scraping creates legal and reputational risk with no benefit.
   contract MUST be flagged in the PR description with a migration/rollback plan.
 - Staged delivery order: MVP (bot + FSM + static catalog + cosine recommendations) → scrapers +
   real prices → Celery workers + notifications → Redis caching + catalog auto-update.
+- All project documentation MUST be written in Russian. This includes: feature specs, plans,
+  task lists, READMEs, code comments, bot copy, and any artifact produced by the speckit
+  workflow. The constitution and speckit framework template files are exempt as meta-governance
+  artifacts maintained in their original language.
 
 ## Governance
 
@@ -171,4 +175,4 @@ This constitution supersedes all informal coding conventions and verbal agreemen
 Violations that cannot be resolved MUST be documented in the plan's Complexity Tracking table
 with a justification before work may proceed.
 
-**Version**: 1.1.0 | **Ratified**: 2026-04-27 | **Last Amended**: 2026-04-27
+**Version**: 1.1.1 | **Ratified**: 2026-04-27 | **Last Amended**: 2026-04-27

@@ -1,0 +1,16 @@
+.git/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.*
+tests/
+fixtures/
+specs/
+scripts/
+*.egg-info/
+dist/
+.DS_Store
+*.log
